@@ -12,7 +12,7 @@ def guess_my_name():
         response = input('Guess {}: {} were you born in {}/{} (Y/N)? '.format(round, name, guess_m, guess_y)).lower()
         if response == 'y':
             print('I knew it!')
-            break
+            exit()
         else:
             if round == 5 and response != 'yes':
                 print('I have othr things to do. Good bye.')
